@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #277175;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #277175;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    max-height: 50px;
+    z-index: 500;
+  }
+  
+  /* Style the topnav links */
+  .topnav #links {
+    float: right;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+
+  .topnav #logo{
+      float: left;
+      display: block;
+      padding: 20px 20px 20px 20px;
+      color: #FFF;
+      font-size: large;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #E07646;
+  }
+  /* style the banner image */
+  .banner{
+    background-color: black;
+  }
+
+  .banner #textbox{
+    background-color: rgba(50, 50, 50, .8);
+    width: 50%;
+    height: 50%;
+    float: left;
+    margin-top: 15%;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+
+  /* Style the content */
+  .content {
+    background-color: #FFF;
+    padding: 10px;
+    width: 75%;
+    min-height: 500px;
+    text-align: center;
+    margin: 0% 12.5%;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #0A4140;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .banner .grid-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 15% auto 25%;
+    padding: 10px;
+    
+  }
+  
+  .banner .grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .banner img{
+    margin-left: -30px;
+  }
+
+  button{
+    background-color: #277175;
+    color: #FFFFFF;
+    border: none;
+    width: 100px;
+    height: 50px;
+  }
+
+  button:hover{
+    background-color: #E07646;
+  }
+
+  .listen{
+    min-height: 500px;
+    color: #E07646;
+    background-color: #0A4140;
+    padding: 10px;
+    min-height: 500px;
+    text-align: center;
+  }
+
+  .listen h2{
+    padding-bottom: 1rem;
+  }
+
+  .contact{
+    min-height: 200px;
+    text-align: center;
+  }
+
+  .contact-photo{
+    background-image: url("./Images/X32.jpeg");
+    width: 100%;
+    height: 100px;
+    
+  }
+
+  .contact .grid-container{
+    text-align: center;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    padding: 1% 5% 5% 5%;
+  }
+
+  .contact .grid-item img{
+    filter: grayscale(100%);
+    width: 50%;
+  }
+  .contact .grid-item img:hover{
+    
+    animation: colorFadeIn 1s ease-in-out 0s 1 alternate forwards;
+  }
+
+  @keyframes colorFadeIn {
+    from{filter: grayscale(100%);}
+    to{filter: grayscale(0%);}
+  }
+  @keyframes colorFadeOut {
+    from{filter: grayscale(0%);}
+    to{filter: grayscale(100%);}
+  }
+
+
+  /*carousel css*/
+
+  .mySlides {
+    display: none;
+    height: 1000px;
+  }
+
+  .slide1{
+    background-image: url("./Images/console_1.jpg");
+    background-attachment: fixed;
+    box-shadow: 0px -12px 14px black inset;
+    background-size: cover;
+  }
+  .slide2{
+    background-image: url("./Images/console_2.jpg");
+    background-attachment: fixed;
+    box-shadow: 0px -12px 14px black inset;
+    background-size: cover;
+  }
+  .slide3{
+    background-image: url("./Images/console_3.jpg");
+    background-attachment: fixed;
+    box-shadow: 0px -12px 14px black inset;
+    background-size: cover;
+  }
+  
+  .carousel{
+    background-color: darkgrey;
+  }
+
+  .carousel-item img{
+    vertical-align: middle;
+  }
